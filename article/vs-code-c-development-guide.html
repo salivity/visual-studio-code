@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4Y4YXFHZS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-R4Y4YXFHZS');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code C++ Development Guide - visual-studio-code</title>
+    <meta name="description" content="Visual Studio Code (VS Code) is a highly customizable, lightweight text editor that provides robust support for C++ development through a rich ecosystem of extensions. This article explores how VS Code facilitates C++ coding by detailing its key features">
+    <link rel="canonical" href="https://salivity.github.io/visual-studio-code/article/vs-code-c-development-guide">
+    <link rel="icon" href="/visual-studio-code/favicon.ico">
+    <link rel="stylesheet" href="/visual-studio-code/css/style.css">
+    <link media="print" rel="stylesheet" href="/visual-studio-code/css/print.css">
+    <script src="/visual-studio-code/js/fuse.min.js"></script>
+    <script src="/visual-studio-code/js/script.js"></script>
+    <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/4.1.3/tex-chtml.min.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VS Code C++ Development Guide - visual-studio-code" />
+    <meta property="og:url" content="https://salivity.github.io/visual-studio-code/article/vs-code-c-development-guide" />
+    <meta property="og:image:url" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:secure_url" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="Visual Studio Code (VS Code) is a highly customizable, lightweight text editor that provides robust support for C++ development through a rich ecosystem of extensions. This article explores how VS Code facilitates C++ coding by detailing its key features" />
+    <link rel="manifest" href="/visual-studio-code/pwa/manifest.json" />
+</head>
+<body>
+    <header>
+        <a href="/visual-studio-code/" aria-label="Go To Home Page" title="Go To Home Page" id="logo">
+            <span>salivity.github.io/</span><span>visual-studio-code</span>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a href="https://github.com/salivity" title="Github" aria-label="Go To Github Profile Page"><svg class="svg-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path></svg></a></li>
+                <li><a href="/visual-studio-code/search" title="Search" aria-label="Go To Search Page"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg></a></li>
+                <li><a id="theme-toggle" title="Theme" href="javascript:void(0);" aria-label="Toggle Website Theme"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article><h1 id="vs-code-c-development-guide">VS Code C++ Development Guide</h1>
+<p>Visual Studio Code (VS Code) is a highly customizable, lightweight
+text editor that provides robust support for C++ development through a
+rich ecosystem of extensions. This article explores how VS Code
+facilitates C++ coding by detailing its key features, essential
+extensions, debugging capabilities, and compiler integration.</p>
+<h2 id="the-microsoft-cc-extension">The Microsoft C/C++ Extension</h2>
+<p>The foundation of C++ development in VS Code is the official
+<strong>C/C++ extension</strong> developed by Microsoft. Once installed,
+this extension turns the lightweight editor into a powerful development
+environment by providing:</p>
+<ul>
+<li><strong>IntelliSense:</strong> Smart code completions, parameter
+info, and quick info based on variable types, function definitions, and
+imported headers.</li>
+<li><strong>Code Navigation:</strong> Quick navigation tools such as "Go
+to Definition," "Go to Declaration," and "Find All References."</li>
+<li><strong>Formatting:</strong> Automatic code formatting using
+Clang-Format, ensuring consistent coding styles across projects.</li>
+</ul>
+<h2 id="compiler-integration-and-build-automation">Compiler Integration
+and Build Automation</h2>
+<p>VS Code does not include a built-in C++ compiler. Instead, it
+seamlessly integrates with existing external compilers such as GCC/MinGW
+(Windows/Linux), Clang (macOS), and MSVC (Windows).</p>
+<ul>
+<li><strong>Build Tasks:</strong> Through <code>tasks.json</code>
+configuration files, developers can define build instructions. VS Code
+can invoke the compiler to compile code directly from the editor with a
+simple keyboard shortcut.</li>
+<li><strong>CMake Tools:</strong> For larger, multi-file projects, the
+<strong>CMake Tools</strong> extension provides deep integration with
+CMake. It automates the generation of build files, configures compiler
+paths, and enables one-click builds.</li>
+</ul>
+<h2 id="powerful-debugging-capabilities">Powerful Debugging
+Capabilities</h2>
+<p>Debugging is native to the VS Code C++ workflow. By configuring a
+<code>launch.json</code> file, developers can launch their compiled
+executables with debuggers like GDB, LLDB, or the Visual Studio Windows
+Debugger. Key debugging features include:</p>
+<ul>
+<li>Setting breakpoints and conditional breakpoints.</li>
+<li>Stepping into, over, and out of functions.</li>
+<li>Inspecting variables in the "Watch" window.</li>
+<li>Evaluating expressions dynamically via the Debug Console.</li>
+</ul>
+<h2 id="project-management-and-workspace-settings">Project Management
+and Workspace Settings</h2>
+<p>VS Code uses a folder-based workspace structure. All configuration
+files (for compilers, debuggers, and code formatting) are saved inside a
+hidden <code>.vscode</code> folder within the project directory. This
+makes it easy to share project-specific environment settings with other
+team members via version control systems like Git, ensuring a consistent
+development environment across different machines.</p></article>
+        <div id=comments-container></div>
+
+        <script>
+            const utterancesScript = document.createElement('script');
+            
+            utterancesScript.setAttribute('src', 'https://utteranc.es/client.js');
+            utterancesScript.setAttribute('repo', 'salivity/visual-studio-code'); 
+            utterancesScript.setAttribute('issue-term', 'pathname'); 
+            utterancesScript.setAttribute('theme', localStorage.getItem('theme') === 'dark' ? 'github-dark' : 'github-light'); 
+            utterancesScript.setAttribute('crossorigin', 'anonymous');
+            utterancesScript.async = true;
+
+            document.getElementById('comments-container').appendChild(utterancesScript);
+        </script>
+    
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="/visual-studio-code/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/visual-studio-code/terms-and-conditions">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright &copy; <span id="current-year"></span>
+        </div>
+    </footer>
+</body>
+</html>

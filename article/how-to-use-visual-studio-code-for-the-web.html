@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4Y4YXFHZS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-R4Y4YXFHZS');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use Visual Studio Code for the Web - visual-studio-code</title>
+    <meta name="description" content="Visual Studio Code for the Web provides a free, zero-install version of the popular VS Code editor that runs entirely inside your web browser. This article will show you how to quickly access the web editor, open local files and folders, connect to remot">
+    <link rel="canonical" href="https://salivity.github.io/visual-studio-code/article/how-to-use-visual-studio-code-for-the-web">
+    <link rel="icon" href="/visual-studio-code/favicon.ico">
+    <link rel="stylesheet" href="/visual-studio-code/css/style.css">
+    <link media="print" rel="stylesheet" href="/visual-studio-code/css/print.css">
+    <script src="/visual-studio-code/js/fuse.min.js"></script>
+    <script src="/visual-studio-code/js/script.js"></script>
+    <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/4.1.3/tex-chtml.min.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How to Use Visual Studio Code for the Web - visual-studio-code" />
+    <meta property="og:url" content="https://salivity.github.io/visual-studio-code/article/how-to-use-visual-studio-code-for-the-web" />
+    <meta property="og:image:url" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:secure_url" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="Visual Studio Code for the Web provides a free, zero-install version of the popular VS Code editor that runs entirely inside your web browser. This article will show you how to quickly access the web editor, open local files and folders, connect to remot" />
+    <link rel="manifest" href="/visual-studio-code/pwa/manifest.json" />
+</head>
+<body>
+    <header>
+        <a href="/visual-studio-code/" aria-label="Go To Home Page" title="Go To Home Page" id="logo">
+            <span>salivity.github.io/</span><span>visual-studio-code</span>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a href="https://github.com/salivity" title="Github" aria-label="Go To Github Profile Page"><svg class="svg-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path></svg></a></li>
+                <li><a href="/visual-studio-code/search" title="Search" aria-label="Go To Search Page"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg></a></li>
+                <li><a id="theme-toggle" title="Theme" href="javascript:void(0);" aria-label="Toggle Website Theme"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article><h1 id="how-to-use-visual-studio-code-for-the-web">How to Use Visual
+Studio Code for the Web</h1>
+<p>Visual Studio Code for the Web provides a free, zero-install version
+of the popular VS Code editor that runs entirely inside your web
+browser. This article will show you how to quickly access the web
+editor, open local files and folders, connect to remote repositories
+like GitHub, and understand the core features and limitations of this
+browser-based development environment.</p>
+<h2 id="how-to-access-the-web-editor">How to Access the Web Editor</h2>
+<p>To start using the web version of VS Code, open any modern web
+browser (such as Chrome, Edge, Firefox, or Safari) and navigate to <a
+href="https://vscode.dev">vscode.dev</a>. The interface will instantly
+load, presenting you with a familiar VS Code workspace layout complete
+with an Explorer, Search, Source Control, and Extensions view.</p>
+<h2 id="opening-local-files-and-folders">Opening Local Files and
+Folders</h2>
+<p>You can work on files stored directly on your local computer using
+the File System Access API supported by modern browsers:</p>
+<ol type="1">
+<li>Click on <strong>Open File</strong> or <strong>Open Folder</strong>
+on the Welcome page, or use the <strong>File</strong> menu.</li>
+<li>Select the file or folder from your local system.</li>
+<li>Grant the browser permission to view and edit the files when
+prompted.</li>
+</ol>
+<p>Once granted, any changes you save in the browser will be written
+directly back to your local machine.</p>
+<h2 id="connecting-to-github-and-azure-devops">Connecting to GitHub and
+Azure DevOps</h2>
+<p>One of the most powerful features of vscode.dev is its deep
+integration with cloud repositories:</p>
+<ul>
+<li><strong>Open a GitHub Repository:</strong> You can open any GitHub
+repository by prefixing the URL in your browser. Change
+<code>github.com/user/repo</code> to <code>github.dev/user/repo</code>,
+or simply paste the repository URL into the <strong>Open Remote
+Repository</strong> prompt in vscode.dev.</li>
+<li><strong>Commit Changes:</strong> Use the Source Control tab to stage
+changes, write commit messages, and push updates directly back to your
+remote branches without needing a local Git installation.</li>
+</ul>
+<h2 id="installing-extensions">Installing Extensions</h2>
+<p>You can customize your browser editor with extensions from the VS
+Code Marketplace. However, there is a key difference in how they
+run:</p>
+<ul>
+<li><strong>Web-enabled Extensions:</strong> Extensions that focus on UI
+themes, keymaps, code snippets, and static analysis (like Markdown or
+HTML previewers) run directly in the browser and are fully
+supported.</li>
+<li><strong>Unsupported Extensions:</strong> Extensions that require
+local OS services, a terminal, or node.js processes (such as local
+debuggers or platform-specific compilers) cannot run in the web
+version.</li>
+</ul>
+<h2 id="key-limitations-of-vs-code-for-the-web">Key Limitations of VS
+Code for the Web</h2>
+<p>While highly convenient, vscode.dev is not a complete replacement for
+the desktop application. Keep the following limitations in mind:</p>
+<ul>
+<li><strong>No Built-in Terminal:</strong> You cannot run a local
+terminal, compile code, or execute command-line tools directly in the
+browser.</li>
+<li><strong>No Debugging:</strong> Traditional local debugging is not
+supported, though you can use browser-based debugging for web
+applications.</li>
+<li><strong>Limited Language Servers:</strong> Rich IntelliSense, code
+navigation, and refactoring may be limited to syntax highlighting and
+basic completions for languages that require a heavy local runtime (like
+C++ or Java). Full language support remains available for web languages
+like JavaScript, TypeScript, HTML, and CSS.</li>
+</ul></article>
+        <div id=comments-container></div>
+
+        <script>
+            const utterancesScript = document.createElement('script');
+            
+            utterancesScript.setAttribute('src', 'https://utteranc.es/client.js');
+            utterancesScript.setAttribute('repo', 'salivity/visual-studio-code'); 
+            utterancesScript.setAttribute('issue-term', 'pathname'); 
+            utterancesScript.setAttribute('theme', localStorage.getItem('theme') === 'dark' ? 'github-dark' : 'github-light'); 
+            utterancesScript.setAttribute('crossorigin', 'anonymous');
+            utterancesScript.async = true;
+
+            document.getElementById('comments-container').appendChild(utterancesScript);
+        </script>
+    
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="/visual-studio-code/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/visual-studio-code/terms-and-conditions">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright &copy; <span id="current-year"></span>
+        </div>
+    </footer>
+</body>
+</html>

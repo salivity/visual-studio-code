@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4Y4YXFHZS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-R4Y4YXFHZS');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code User Settings vs Workspace Settings - visual-studio-code</title>
+    <meta name="description" content="When configuring Visual Studio Code (VS Code), you will encounter two primary configuration scopes: User Settings and Workspace Settings. This article explains the key differences between these two settings types, how they interact, and when to use each">
+    <link rel="canonical" href="https://salivity.github.io/visual-studio-code/article/vs-code-user-settings-vs-workspace-settings">
+    <link rel="icon" href="/visual-studio-code/favicon.ico">
+    <link rel="stylesheet" href="/visual-studio-code/css/style.css">
+    <link media="print" rel="stylesheet" href="/visual-studio-code/css/print.css">
+    <script src="/visual-studio-code/js/fuse.min.js"></script>
+    <script src="/visual-studio-code/js/script.js"></script>
+    <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/4.1.3/tex-chtml.min.js" defer></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VS Code User Settings vs Workspace Settings - visual-studio-code" />
+    <meta property="og:url" content="https://salivity.github.io/visual-studio-code/article/vs-code-user-settings-vs-workspace-settings" />
+    <meta property="og:image:url" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:secure_url" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="When configuring Visual Studio Code (VS Code), you will encounter two primary configuration scopes: User Settings and Workspace Settings. This article explains the key differences between these two settings types, how they interact, and when to use each" />
+    <link rel="manifest" href="/visual-studio-code/pwa/manifest.json" />
+</head>
+<body>
+    <header>
+        <a href="/visual-studio-code/" aria-label="Go To Home Page" title="Go To Home Page" id="logo">
+            <span>salivity.github.io/</span><span>visual-studio-code</span>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a href="https://github.com/salivity" title="Github" aria-label="Go To Github Profile Page"><svg class="svg-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path></svg></a></li>
+                <li><a href="/visual-studio-code/search" title="Search" aria-label="Go To Search Page"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg></a></li>
+                <li><a id="theme-toggle" title="Theme" href="javascript:void(0);" aria-label="Toggle Website Theme"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article><h1 id="vs-code-user-settings-vs-workspace-settings">VS Code User
+Settings vs Workspace Settings</h1>
+<p>When configuring Visual Studio Code (VS Code), you will encounter two
+primary configuration scopes: User Settings and Workspace Settings. This
+article explains the key differences between these two settings types,
+how they interact, and when to use each to optimize your development
+environment.</p>
+<h2 id="what-are-user-settings">What are User Settings?</h2>
+<p>User Settings are global configurations that apply to every instance
+of VS Code you open, regardless of the project or folder you are working
+on. These settings are tied to your specific user account on your
+operating system.</p>
+<ul>
+<li><strong>Scope:</strong> Global (applies to all projects).</li>
+<li><strong>Storage Location:</strong> Stored in a global
+<code>settings.json</code> file in your system's user profile
+directory.</li>
+<li><strong>Best Used For:</strong> Personal preferences that you want
+to remain consistent across all your work, such as your editor theme,
+font size, telemetry preferences, and custom keyboard shortcuts.</li>
+</ul>
+<h2 id="what-are-workspace-settings">What are Workspace Settings?</h2>
+<p>Workspace Settings are project-specific configurations that only
+apply to the currently open folder or workspace. These settings take
+precedence over your global User Settings.</p>
+<ul>
+<li><strong>Scope:</strong> Local (applies only to the active
+project/folder).</li>
+<li><strong>Storage Location:</strong> Stored inside a
+<code>.vscode</code> folder within your project's root directory in a
+file named <code>settings.json</code>.</li>
+<li><strong>Best Used For:</strong> Project-specific configurations,
+such as code linter rules, formatting standards, path configurations,
+and language-specific settings that need to be shared with a team.</li>
+</ul>
+<h2 id="key-differences-at-a-glance">Key Differences at a Glance</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">User Settings</th>
+<th style="text-align: left;">Workspace Settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Scope</strong></td>
+<td style="text-align: left;">Global (all projects)</td>
+<td style="text-align: left;">Local (current project only)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Precedence</strong></td>
+<td style="text-align: left;">Lower (overridden by Workspace)</td>
+<td style="text-align: left;">Higher (overrides User Settings)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>File Location</strong></td>
+<td style="text-align: left;">System user profile</td>
+<td style="text-align: left;">Project
+<code>.vscode/settings.json</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version Control</strong></td>
+<td style="text-align: left;">Typically excluded (private)</td>
+<td style="text-align: left;">Typically committed (shared via Git)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Team Sharing</strong></td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">Yes (ensures consistent team
+environment)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-the-settings-hierarchy-works">How the Settings Hierarchy
+Works</h2>
+<p>VS Code applies settings using a specific order of precedence. If a
+setting is defined in multiple places, the most specific setting
+wins.</p>
+<p>The order of override is:</p>
+<ol type="1">
+<li><strong>Default Settings:</strong> The baseline configurations built
+into VS Code.</li>
+<li><strong>User Settings:</strong> Your global personal preferences
+(overrides Defaults).</li>
+<li><strong>Workspace Settings:</strong> Project-specific settings
+(overrides User Settings).</li>
+<li><strong>Folder Settings:</strong> Specific settings for sub-folders
+in a multi-root workspace (overrides Workspace Settings).</li>
+</ol>
+<p>For example, if your User Settings set the tab size to
+<code>4</code>, but your project's Workspace Settings set the tab size
+to <code>2</code>, VS Code will use a tab size of <code>2</code> when
+you are working inside that specific project.</p>
+<h2 id="how-to-access-and-change-settings">How to Access and Change
+Settings</h2>
+<p>You can modify both settings types using either the graphical
+Settings UI or the JSON file.</p>
+<ol type="1">
+<li>Open settings using <code>Ctrl+,</code> (Windows/Linux) or
+<code>Cmd+,</code> (macOS).</li>
+<li>At the top of the Settings editor, you will see tabs for
+<strong>User</strong> and <strong>Workspace</strong>.</li>
+<li>Select the appropriate tab to make changes to that specific
+scope.</li>
+</ol>
+<p>To edit the JSON files directly, click the <strong>Open Settings
+(JSON)</strong> icon in the top right corner of the Settings tab.</p></article>
+        <div id=comments-container></div>
+
+        <script>
+            const utterancesScript = document.createElement('script');
+            
+            utterancesScript.setAttribute('src', 'https://utteranc.es/client.js');
+            utterancesScript.setAttribute('repo', 'salivity/visual-studio-code'); 
+            utterancesScript.setAttribute('issue-term', 'pathname'); 
+            utterancesScript.setAttribute('theme', localStorage.getItem('theme') === 'dark' ? 'github-dark' : 'github-light'); 
+            utterancesScript.setAttribute('crossorigin', 'anonymous');
+            utterancesScript.async = true;
+
+            document.getElementById('comments-container').appendChild(utterancesScript);
+        </script>
+    
+    </main>
+    <footer>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="/visual-studio-code/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/visual-studio-code/terms-and-conditions">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright &copy; <span id="current-year"></span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,602 @@
+[
+  [
+    100,
+    "Export and Import Profiles in VS Code",
+    "This article provides a straightforward, step-by-step guide on how to export and import user profiles in Visual Studio Code. Managing profiles allows you to customize your development environment for different programming languages or projects, and easil",
+    false
+  ],
+  [
+    99,
+    "VS Code Profile Templates: Organize Your Workspace",
+    "Visual Studio Code (VS Code) Profile templates allow developers to customize, save, and quickly switch between different editor configurations tailored to specific workflows. This article explains what Profile templates are, how they help declutter and o",
+    false
+  ],
+  [
+    98,
+    "How to Use Visual Studio Code for the Web",
+    "Visual Studio Code for the Web provides a free, zero-install version of the popular VS Code editor that runs entirely inside your web browser. This article will show you how to quickly access the web editor, open local files and folders, connect to remot",
+    false
+  ],
+  [
+    97,
+    "What is Visual Studio Code Portable Mode?",
+    "This article explains what the portable mode of Visual Studio Code (VS Code) is, how it works, and its primary benefits. You will learn how this configuration allows you to run the popular code editor from a USB drive or a specific directory without affe",
+    false
+  ],
+  [
+    96,
+    "How to Fix VS Code High CPU Usage",
+    "Visual Studio Code is a highly popular and lightweight text editor, but users occasionally encounter performance issues where the application consumes an unusually high percentage of CPU resources. This guide provides a direct, step-by-step troubleshooti",
+    false
+  ],
+  [
+    95,
+    "What Does GitHub Copilot Do in Visual Studio Code",
+    "This article explains the core functions and capabilities of the GitHub Copilot extension within Visual Studio Code (VS Code). It covers how this AI-powered developer tool assists with code generation, explanations, debugging, and overall workflow effici",
+    false
+  ],
+  [
+    94,
+    "How to Open Developer Tools in VS Code",
+    "Visual Studio Code is built on the Electron framework, which combines the Chromium rendering engine and Node.js. Because of this architecture, you can inspect and debug the editor's user interface just like a web page using Chrome Developer Tools. This g",
+    false
+  ],
+  [
+    93,
+    "What is Visual Studio Code Insiders",
+    "This article explains the purpose of the Visual Studio Code (VS Code) Insiders build, how it differs from the standard stable release, and who should use it. We will explore its key benefits, including early access to new features, its role in the develo",
+    false
+  ],
+  [
+    92,
+    "How to Configure Custom Tasks in VS Code",
+    "Visual Studio Code allows developers to automate repetitive workflows—such as building, testing, or deploying applications—by creating custom tasks. This article provides a straightforward guide on how to configure these custom tasks using the tasks.",
+    false
+  ],
+  [
+    91,
+    "How VS Code Live Share Enables Real-Time Collaboration",
+    "Visual Studio Code (VS Code) Live Share is a powerful extension that revolutionizes collaborative programming by allowing developers to share their codebase and edit code together in real-time. This article explains how Live Share works, detailing its co",
+    false
+  ],
+  [
+    90,
+    "What is WSL Integration in Visual Studio Code?",
+    "This article provides a comprehensive overview of the Windows Subsystem for Linux (WSL) integration in Visual Studio Code (VS Code). You will learn how this integration enables developers to use a full-featured Linux development environment directly from",
+    false
+  ],
+  [
+    89,
+    "How Dev Containers Isolate Environments in VS Code",
+    "The Visual Studio Code Dev Containers extension isolates development environments by running your project's code, tools, and dependencies inside a secure, lightweight Docker container instead of on your local machine. This article explains the underlying",
+    false
+  ],
+  [
+    88,
+    "What is VS Code Remote - SSH Extension Used For?",
+    "The Visual Studio Code Remote - SSH extension is a powerful tool that allows developers to use a local installation of VS Code to edit files, run commands, and debug applications on a remote machine. This article explains how the extension works, its key",
+    false
+  ],
+  [
+    87,
+    "How to Evaluate Expressions in VS Code Debug Console",
+    "Debugging code often requires inspecting variables and testing expressions in real-time. This article provides a quick, step-by-step guide on how to use the Debug Console in Visual Studio Code (VS Code) to evaluate expressions, execute code snippets, and",
+    false
+  ],
+  [
+    86,
+    "What is the VS Code Debugger Watch Pane Used For?",
+    "During software development, debugging is crucial for identifying and resolving errors in your code. In Visual Studio Code, the Watch pane is a specialized debugging tool designed to monitor the values of specific variables and custom expressions in real",
+    false
+  ],
+  [
+    85,
+    "How to Step Over or Step Into in VS Code",
+    "Debugging is a crucial part of software development, and mastering navigation controls like \"Step Over\" and \"Step Into\" in Visual Studio Code (VS Code) can significantly speed up your troubleshooting process. This article provides a quick, direct guide o",
+    false
+  ],
+  [
+    84,
+    "VS Code Debugger Variables Pane Explained",
+    "During a debugging session in Visual Studio Code, the Variables pane is a crucial tool for inspecting the state of your running application. This article explains the specific types of information displayed in this pane—including local, global, and clo",
+    false
+  ],
+  [
+    83,
+    "How to Set Conditional Breakpoints in VS Code",
+    "Conditional breakpoints in Visual Studio Code (VS Code) allow you to pause code execution only when specific conditions are met, saving you from manually stepping through loops or repetitive function calls. This guide provides a straightforward, step-by-",
+    false
+  ],
+  [
+    82,
+    "Purpose of launch.json in VS Code Debugging",
+    "In Visual Studio Code, the launch.json file is the central configuration file used to set up and customize debugging sessions. This article explains the purpose of this file, how it works, and how developers use it to configure runtimes, arguments, and e",
+    false
+  ],
+  [
+    81,
+    "How to Start Debugging in VS Code",
+    "Debugging is a crucial part of the software development process, and Visual Studio Code (VS Code) offers a powerful built-in debugger to make this task easier. This article provides a quick, step-by-step guide on how to configure and start a debugging se",
+    false
+  ],
+  [
+    80,
+    "How to Set VS Code as Default Git Editor",
+    "This guide provides a straightforward, step-by-step walkthrough on how to configure Visual Studio Code (VS Code) as your default text editor for Git commands. You will learn the exact terminal commands needed for global configuration, how to handle syste",
+    false
+  ],
+  [
+    79,
+    "What is GitLens and How Does It Enhance VS Code?",
+    "Visual Studio Code is a powerful code editor, but its built-in Git capabilities can be limited for complex workflows. This article explores GitLens, a popular extension that supercharges VS Code's version control capabilities. We will examine what GitLen",
+    false
+  ],
+  [
+    78,
+    "How to See Git Status in VS Code File Explorer",
+    "Visual Studio Code provides built-in integration with Git, allowing you to track the status of your files directly within the file explorer. This guide explains how to view, enable, and customize Git status indicators—such as color-coding and badges—",
+    false
+  ],
+  [
+    77,
+    "How to Set Workspace Settings in VS Code",
+    "In Visual Studio Code, you can customize your development environment on a project-by-project basis using workspace-specific settings. This article provides a straightforward guide on how to configure these settings using both the graphical Settings edit",
+    false
+  ],
+  [
+    76,
+    "Where is the .vscode Folder and What Does It Do?",
+    "When working with Visual Studio Code, you may notice a hidden directory named .vscode inside your project directory. This article explains exactly where to find the .vscode folder, its primary purpose in storing project-specific configurations, and the k",
+    false
+  ],
+  [
+    75,
+    "Save Multiple Folders as a Workspace in VS Code",
+    "Working with multiple related projects in Visual Studio Code is made seamless by using multi-root workspaces. This article provides a quick, step-by-step guide on how to combine multiple folders into a single workspace and save it for easy access in the",
+    false
+  ],
+  [
+    74,
+    "What is a VS Code Multi-Root Workspace?",
+    "Visual Studio Code's multi-root workspace feature allows developers to work with multiple, independent project folders within a single VS Code window. This article explains what multi-root workspaces are, how they benefit your development workflow, how t",
+    false
+  ],
+  [
+    73,
+    "Customize VS Code Terminal Font Family and Size",
+    "Visual Studio Code allows users to fully customize their development environment, including the appearance of the integrated terminal. This guide provides a quick, step-by-step walkthrough on how to change both the font family and font size of the VS Cod",
+    false
+  ],
+  [
+    72,
+    "How to Clear Terminal in VS Code",
+    "This article provides a quick and straightforward guide on how to clear the integrated terminal screen in Visual Studio Code (VS Code). You will learn the default keyboard shortcuts for different operating systems, the standard shell commands, and how to",
+    false
+  ],
+  [
+    71,
+    "How to Change Default Shell in VS Code",
+    "This guide provides a quick and straightforward walkthrough on how to change the default shell of the integrated terminal in Visual Studio Code (VS Code). Whether you want to switch between PowerShell, Command Prompt, Git Bash, WSL, Bash, or Zsh, you wil",
+    false
+  ],
+  [
+    70,
+    "Run Multiple Terminals Side by Side in VS Code",
+    "Visual Studio Code (VS Code) allows developers to run and manage multiple terminal instances simultaneously within the same panel. This guide provides a straightforward explanation of how to split your terminal screen side-by-side using the graphical int",
+    false
+  ],
+  [
+    69,
+    "How to Open Terminal in Visual Studio Code",
+    "Visual Studio Code (VS Code) features a powerful integrated terminal that allows developers to run command-line tools, build scripts, and version control commands directly within the editor. This guide provides quick, step-by-step instructions on how to",
+    false
+  ],
+  [
+    68,
+    "How to Create a Git Branch in VS Code",
+    "Visual Studio Code provides a robust, built-in graphical interface that makes version control management seamless. This article explains how to quickly create a new Git branch directly within the VS Code interface using three different methods, as well a",
+    false
+  ],
+  [
+    67,
+    "Push Commits to a Remote Repository in VS Code",
+    "This article explains how to push your local Git commits to a remote repository directly from Visual Studio Code. You will learn how to use the built-in Source Control interface, the Command Palette, and the integrated terminal to safely upload your code",
+    false
+  ],
+  [
+    66,
+    "VS Code Timeline View Explained",
+    "The timeline view in Visual Studio Code is a built-in feature that provides a chronological history of events for a specific file. This article explains what the timeline view displays, including Git commits and local save history, and how you can use it",
+    false
+  ],
+  [
+    65,
+    "Resolve Merge Conflicts in VS Code Merge Editor",
+    "Merge conflicts occur when competing changes are made to the same line of a file on different branches. Visual Studio Code (VS Code) features a powerful, built-in 3-way merge editor that simplifies resolving these conflicts by showing the incoming change",
+    false
+  ],
+  [
+    64,
+    "How to Show Git Blame Inline in VS Code",
+    "Visual Studio Code displays inline Git blame information primarily through powerful extensions like GitLens, as well as through its evolving native Git integration. This article guides you through how these inline annotations work, how to enable them usi",
+    false
+  ],
+  [
+    63,
+    "How to Clone a GitHub Repository in VS Code",
+    "Cloning a GitHub repository directly from Visual Studio Code (VS Code) is a simple process that allows you to copy remote code to your local machine without ever leaving your code editor. This article provides a straightforward, step-by-step guide on how",
+    false
+  ],
+  [
+    62,
+    "How to Stage Changes in VS Code Source Control",
+    "Staging files in Visual Studio Code is a fundamental step in the Git workflow, allowing you to select exactly which modifications to include in your next commit. This guide provides a direct, step-by-step walkthrough on how to stage individual files, sel",
+    false
+  ],
+  [
+    61,
+    "How VS Code Integrates with Git Out of the Box",
+    "Visual Studio Code provides robust, built-in support for Git, allowing developers to manage version control directly from the editor without installing additional extensions. This article explores how VS Code integrates with Git out of the box, covering",
+    false
+  ],
+  [
+    60,
+    "Why Use ESLint Extension in Visual Studio Code",
+    "Integrating the ESLint extension into Visual Studio Code is one of the most effective ways to improve code quality and maintain formatting consistency in JavaScript and TypeScript projects. This article explores the key benefits of using this extension,",
+    false
+  ],
+  [
+    59,
+    "Improve Web Development with VS Code Live Server",
+    "The Live Server extension is a game-changer for web developers using Visual Studio Code (VS Code). This article explores how this powerful tool improves your development workflow by enabling real-time browser reloading, simplifying local server hosting,",
+    false
+  ],
+  [
+    58,
+    "Manage Node.js Dependencies and Environments in VS Code",
+    "Efficiently managing Node.js dependencies and environments is crucial for seamless application development. Visual Studio Code (VS Code) simplifies this workflow through built-in features like the Integrated Terminal, the npm Scripts Explorer, and Launch",
+    false
+  ],
+  [
+    57,
+    "How to Downgrade a VS Code Extension",
+    "Sometimes, a recent update to a Visual Studio Code extension can introduce unexpected bugs, break your development workflow, or cause compatibility issues with your current environment. This article provides a quick, step-by-step guide on how to roll bac",
+    false
+  ],
+  [
+    56,
+    "What is a VSIX File and How to Use It in VS Code",
+    "This article explains what a VSIX file is and details its role as an extension package for Visual Studio Code. You will learn why these files are used for offline extension distribution, followed by a clear, step-by-step guide on how to manually install",
+    false
+  ],
+  [
+    55,
+    "How to Sync VS Code Extensions Across Multiple Computers",
+    "Managing your development environment across different devices can be a tedious task, but Visual Studio Code makes it seamless with its built-in Settings Sync feature. This article provides a straightforward, step-by-step guide on how to automatically sy",
+    false
+  ],
+  [
+    54,
+    "Identify VS Code Extensions Causing Performance Issues",
+    "Visual Studio Code is a highly customizable editor, but installing too many extensions—or poorly optimized ones—can lead to high CPU usage, slow startup times, and editor lag. This article provides a direct, step-by-step guide on how to use VS Code's",
+    false
+  ],
+  [
+    53,
+    "What is the Prettier Extension in VS Code?",
+    "This article explains the purpose of the Prettier extension in Visual Studio Code (VS Code), detailing how it functions as an automatic code formatter, why it is essential for modern development workflows, and how it helps maintain consistent code stylin",
+    false
+  ],
+  [
+    52,
+    "How to Preview Markdown Files in VS Code",
+    "Visual Studio Code (VS Code) includes built-in support for rendering Markdown documents, allowing you to see how your formatted text will look in real-time. This article explains how to quickly open a Markdown preview directly within the editor using too",
+    false
+  ],
+  [
+    51,
+    "Java Extension Pack Features for VS Code",
+    "The official Java Extension Pack for Visual Studio Code is a curated collection of extensions that transforms the lightweight text editor into a robust, full-featured Integrated Development Environment (IDE) for Java developers. This article outlines the",
+    false
+  ],
+  [
+    50,
+    "VS Code C++ Development Guide",
+    "Visual Studio Code (VS Code) is a highly customizable, lightweight text editor that provides robust support for C++ development through a rich ecosystem of extensions. This article explores how VS Code facilitates C++ coding by detailing its key features",
+    false
+  ],
+  [
+    49,
+    "Configure Python Interpreter in VS Code",
+    "This article provides a quick, step-by-step guide on how to select and configure a specific Python interpreter in Visual Studio Code (VS Code). You will learn how to access the interpreter selection menu, choose between different global and virtual envir",
+    false
+  ],
+  [
+    48,
+    "Best VS Code Extension for Python",
+    "This article outlines the absolute best Visual Studio Code extension for Python development, detailing its core features and why it is considered the industry standard. You will learn how this single extension enhances your coding workflow through intell",
+    false
+  ],
+  [
+    47,
+    "VS Code JavaScript and TypeScript Support",
+    "Visual Studio Code (VS Code) comes with powerful, built-in support for JavaScript and TypeScript, making it an industry-standard editor for web development without the need for immediate extension installation. This article explores the specific out-of-t",
+    false
+  ],
+  [
+    46,
+    "How to Create a Custom VS Code Extension",
+    "Creating a custom extension for Visual Studio Code allows you to tailor your development environment, automate repetitive tasks, or share new utilities with the developer community. This article provides a straightforward, step-by-step guide on how to bu",
+    false
+  ],
+  [
+    45,
+    "How to Manually Update VS Code Extensions",
+    "While Visual Studio Code typically updates your installed extensions automatically in the background, you may occasionally need to trigger updates manually to access new features, bug fixes, or compatibility patches immediately. This article provides a q",
+    false
+  ],
+  [
+    44,
+    "What is a VS Code Extension Pack?",
+    "An extension pack in Visual Studio Code (VS Code) is a curated collection of individual extensions bundled together into a single, easily installable package. This article explains what VS Code extension packs are, how they function, the benefits they of",
+    false
+  ],
+  [
+    43,
+    "Disable VS Code Extensions for a Single Workspace",
+    "This article provides a quick, step-by-step guide on how to disable specific Visual Studio Code (VS Code) extensions for a single workspace. By managing your extensions on a per-workspace basis, you can optimize editor performance, reduce resource usage,",
+    false
+  ],
+  [
+    42,
+    "Where Are VS Code Extensions Stored?",
+    "Finding where Visual Studio Code (VS Code) stores its extensions on your local machine is useful for troubleshooting, backing up your development environment, or manually deleting corrupt plugins. This guide provides the exact file paths for Windows, mac",
+    false
+  ],
+  [
+    41,
+    "How to Install Extensions in Visual Studio Code",
+    "Visual Studio Code (VS Code) is a highly customizable code editor, and its functionality can be greatly expanded using extensions. This article provides a straightforward, step-by-step guide on how to search for, install, and manage new extensions direct",
+    false
+  ],
+  [
+    40,
+    "What is Format on Save in VS Code",
+    "The \"Format on Save\" setting in Visual Studio Code (VS Code) is a built-in feature that automatically cleans up and structures your code every time you save a file. By instantly applying formatting rules—such as adjusting indentation, adding missing se",
+    false
+  ],
+  [
+    39,
+    "How to Trim Trailing Whitespace on Save in VS Code",
+    "Keeping your code clean and free of unnecessary spaces is essential for maintaining readable source code and preventing clutter in your version control commits. This guide provides a quick, step-by-step walkthrough on how to configure Visual Studio Code",
+    false
+  ],
+  [
+    38,
+    "How to Jump to a Specific Line in VS Code",
+    "Navigating through large code files in Visual Studio Code (VS Code) can be time-consuming if you rely solely on scrolling. Fortunately, VS Code provides several built-in shortcuts and methods to instantly jump to any specific line number. This guide cove",
+    false
+  ],
+  [
+    37,
+    "Purpose of Outline View in Visual Studio Code",
+    "The Outline view in the Explorer panel of Visual Studio Code is a dedicated navigation tool that provides a hierarchical, tree-structured representation of the symbol definitions in your active document. This article explains the primary purposes of the",
+    false
+  ],
+  [
+    36,
+    "How to Enable Word Wrap in Visual Studio Code",
+    "Visual Studio Code (VS Code) handles long lines of text through its word wrap feature, which visually wraps code to fit the screen without altering the actual file structure. This article explains how word wrap functions in VS Code, how to toggle it inst",
+    false
+  ],
+  [
+    35,
+    "How to Comment Out Code in VS Code",
+    "Commenting out blocks of code is an essential practice for debugging and keeping your codebase clean. This article provides a quick guide on how to instantly comment and uncomment multiple lines of code in Visual Studio Code (VS Code) using keyboard shor",
+    false
+  ],
+  [
+    34,
+    "How to Move Code Lines Up or Down in VS Code",
+    "Rearranging your code quickly is essential for maintaining an efficient programming workflow. This article explains the absolute easiest way to move a single line or an entire block of code up or down in Visual Studio Code (VS Code) using simple, built-i",
+    false
+  ],
+  [
+    33,
+    "How to Highlight Matching Brackets in VS Code",
+    "Visual Studio Code (VS Code) uses a combination of built-in features, such as native bracket pair colorization, cursor-based highlighting, and active guides, to help developers identify matching parentheses, square brackets, and curly braces. This articl",
+    false
+  ],
+  [
+    32,
+    "View Function Definition Without Leaving File in VS Code",
+    "In Visual Studio Code, you can quickly inspect the source code of a function, class, or method without navigating away from your current working file. This article explains how to use the \"Peek Definition\" feature, its keyboard shortcuts for Windows, mac",
+    false
+  ],
+  [
+    31,
+    "How Rename Symbol Works in Visual Studio Code",
+    "The \"Rename Symbol\" command in Visual Studio Code is a powerful refactoring tool that allows developers to safely rename variables, functions, classes, and other identifiers across an entire project. Unlike a standard find-and-replace operation, this fea",
+    false
+  ],
+  [
+    30,
+    "How to Fold and Unfold Code in Visual Studio Code",
+    "Managing large files in Visual Studio Code (VS Code) is much easier when you collapse and expand sections of your code. This guide provides a direct, step-by-step overview of how to fold and unfold code blocks in VS Code using folding icons, keyboard sho",
+    false
+  ],
+  [
+    29,
+    "How to Search All Files in Visual Studio Code",
+    "Finding specific text or code across a large project can be challenging, but Visual Studio Code provides a powerful global search tool to find and replace terms across your entire workspace instantly. This guide covers how to access the global search fea",
+    false
+  ],
+  [
+    28,
+    "VS Code Find and Replace Keyboard Shortcut",
+    "This article provides the exact keyboard shortcuts for finding and replacing text within a single file in Visual Studio Code (VS Code). You will learn the specific key combinations for Windows, Linux, and macOS, as well as a quick guide on how to use the",
+    false
+  ],
+  [
+    27,
+    "How to Use Emmet in VS Code for HTML and CSS",
+    "Emmet is a powerful developer tool built directly into Visual Studio Code that dramatically accelerates HTML and CSS workflows. By using simple abbreviations and expanding them into full code snippets, Emmet allows developers to write complex markup and",
+    false
+  ],
+  [
+    26,
+    "Go Back to Previous Cursor Position in VS Code",
+    "Navigating back to your previous cursor position in Visual Studio Code (VS Code) is a crucial shortcut for maintaining your coding flow and efficiency. This article provides a quick guide on the default keyboard shortcuts for navigating backward and forw",
+    false
+  ],
+  [
+    25,
+    "What is Peek Definition in VS Code?",
+    "Visual Studio Code’s \"Peek Definition\" is a powerful productivity feature that allows developers to view and edit code defined in another file or location without leaving their current line of text. This article explains what the Peek Definition featur",
+    false
+  ],
+  [
+    24,
+    "How to Auto Format Code in Visual Studio Code",
+    "Keeping your code clean and consistently styled is essential for readability and collaboration. This article provides a quick, step-by-step guide on how to automatically format an entire document in Visual Studio Code (VS Code) using keyboard shortcuts,",
+    false
+  ],
+  [
+    23,
+    "Purpose of Code Snippets in Visual Studio Code",
+    "Code snippets in Visual Studio Code (VS Code) are reusable templates that allow developers to quickly insert repeating code patterns, such as loops, conditional statements, or boilerplate configurations. This article explains the primary purposes of code",
+    false
+  ],
+  [
+    22,
+    "How to Use Multiple Cursors in VS Code",
+    "Visual Studio Code (VS Code) allows you to use multiple cursors to edit code in several places simultaneously, drastically reducing the time spent on repetitive editing tasks. This article provides a quick, direct guide to the essential keyboard shortcut",
+    false
+  ],
+  [
+    21,
+    "What is IntelliSense in Visual Studio Code",
+    "This article provides an overview of IntelliSense in Visual Studio Code (VS Code), explaining what this feature is and how it functions. We will explore its core capabilities—such as smart code completion, parameter hints, and quick info—and examine",
+    false
+  ],
+  [
+    20,
+    "How to Zoom In and Out in Visual Studio Code",
+    "Adjusting the user interface size in Visual Studio Code can greatly improve readability and reduce eye strain. This article provides a quick guide on how to zoom in and out to change the overall font size of the VS Code UI, including the sidebar, menus,",
+    false
+  ],
+  [
+    19,
+    "How to Pin Tabs in Visual Studio Code",
+    "Managing multiple open files in Visual Studio Code can quickly clutter your workspace. Pinning your most frequently used tabs is an efficient way to keep important files easily accessible, as pinned tabs shrink to save space and stay locked to the left s",
+    false
+  ],
+  [
+    18,
+    "What is the Breadcrumbs Feature in Visual Studio Code?",
+    "The breadcrumbs feature in Visual Studio Code is a powerful navigation aid located at the top of the editor, directly below the file tabs. This article explains the purpose of breadcrumbs, how they improve your coding workflow by displaying file and symb",
+    false
+  ],
+  [
+    17,
+    "VS Code Telemetry and Data Collection Explained",
+    "Visual Studio Code (VS Code) collects telemetry and usage data by default to help Microsoft understand how users interact with the editor, diagnose system issues, and improve the software's overall performance. This article explains what specific data VS",
+    false
+  ],
+  [
+    16,
+    "What Operating Systems Support Visual Studio Code?",
+    "Visual Studio Code (VS Code) is a highly versatile, free, and open-source code editor developed by Microsoft. To ensure optimal performance and security, Microsoft officially supports VS Code on specific versions of Windows, macOS, and Linux. This articl",
+    false
+  ],
+  [
+    15,
+    "How to Open a New Window in Visual Studio Code",
+    "Visual Studio Code (VS Code) allows users to work on multiple projects simultaneously by opening separate windows or instances. This guide provides a quick and direct overview of the different methods you can use to open a new VS Code window, including k",
+    false
+  ],
+  [
+    14,
+    "How to Open Command Palette in VS Code",
+    "The Command Palette is the central hub for executing commands in Visual Studio Code, allowing you to access settings, run tasks, and manage extensions entirely from your keyboard. This article provides the default keyboard shortcuts to open the Command P",
+    false
+  ],
+  [
+    13,
+    "How to Change File Icons in VS Code Explorer",
+    "Visual Studio Code allows developers to personalize their workspace, including the file icons displayed in the Explorer sidebar. This article explains how to change your active file icon theme using built-in settings, install popular custom icon packs fr",
+    false
+  ],
+  [
+    12,
+    "What is the Minimap in Visual Studio Code?",
+    "The minimap in Visual Studio Code (VS Code) is a visual guide that provides a high-level overview of your source code on the side of the editor window. This article explains the primary purposes of the minimap, how it enhances developer productivity thro",
+    false
+  ],
+  [
+    11,
+    "How to Change Color Theme in Visual Studio Code",
+    "Visual Studio Code (VS Code) allows users to fully customize their development environment, including its visual appearance. This guide provides a straightforward, step-by-step walkthrough on how to change the color theme of your VS Code interface, explo",
+    false
+  ],
+  [
+    10,
+    "What is Zen Mode in Visual Studio Code",
+    "Zen Mode in Visual Studio Code (VS Code) is a built-in distraction-free viewing option designed to help developers focus entirely on their code. This article explains what Zen Mode is, its main benefits, how to quickly enable and disable it, and how to c",
+    false
+  ],
+  [
+    9,
+    "How to Split Screen in Visual Studio Code",
+    "Boost your productivity in Visual Studio Code by learning how to view multiple files side-by-side. This guide provides a quick and clear walkthrough of the various methods to split your editor screen—including keyboard shortcuts, mouse actions, and men",
+    false
+  ],
+  [
+    8,
+    "VS Code Status Bar Information Guide",
+    "The Visual Studio Code (VS Code) Status Bar, located at the very bottom of the editor window, is a crucial user interface element that provides real-time feedback and quick access to essential settings. This article outlines the typical information displ",
+    false
+  ],
+  [
+    7,
+    "How to Toggle Activity Bar in VS Code",
+    "This article provides a quick, step-by-step guide on how to show or hide the Activity Bar in Visual Studio Code. You will learn the easiest methods to toggle its visibility using the application menu, the Command Palette, and custom keyboard shortcuts, a",
+    false
+  ],
+  [
+    6,
+    "VS Code User Settings vs Workspace Settings",
+    "When configuring Visual Studio Code (VS Code), you will encounter two primary configuration scopes: User Settings and Workspace Settings. This article explains the key differences between these two settings types, how they interact, and when to use each",
+    false
+  ],
+  [
+    5,
+    "How to Open Settings GUI in Visual Studio Code",
+    "Visual Studio Code provides a user-friendly graphical user interface (GUI) that allows you to easily customize your development environment without manually editing JSON files. This article covers the quickest and most common methods to access the Settin",
+    false
+  ],
+  [
+    4,
+    "Function of the Command Palette in VS Code",
+    "The Command Palette is one of the most powerful features in Visual Studio Code, acting as the central hub for accessing almost all of the editor's functionality. This article explains the primary function of the Command Palette, how to access it, and how",
+    false
+  ],
+  [
+    3,
+    "What Framework Was Used to Build Visual Studio Code?",
+    "This article provides a detailed look at the software framework used to develop the desktop version of Visual Studio Code (VS Code). It explains the underlying technology that powers Microsoft's highly popular code editor, outlines how this framework ena",
+    false
+  ],
+  [
+    2,
+    "VS Code vs Visual Studio: Key Differences",
+    "While sharing a similar name and developer, Visual Studio Code (VS Code) and the Visual Studio Integrated Development Environment (IDE) are fundamentally different tools. This article compares the two, highlighting their core differences in performance,",
+    false
+  ],
+  [
+    1,
+    "What Year Was Visual Studio Code Initially Released?",
+    "This article provides a direct answer to when Microsoft first released Visual Studio Code (VS Code), along with key milestones in its early development. Readers will learn the exact year of its debut, its transition from a preview version to general avai",
+    false
+  ]
+]
