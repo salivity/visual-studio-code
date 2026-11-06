@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Fix VS Code High CPU Usage - visual-studio-code</title>
+    <meta name="description" content="Visual Studio Code is a highly popular and lightweight text editor, but users occasionally encounter performance issues where the application consumes an unusually high percentage of CPU resources. This guide provides a direct, step-by-step troubleshootin">
+    <link rel="canonical" href="https://salivity.github.io/visual-studio-code/article/how-to-fix-vs-code-high-cpu-usage">
+    <link rel="search" type="application/opensearchdescription+xml" title="visual-studio-code" href="/visual-studio-code/opensearch.xml">
+    <link rel="icon" href="/visual-studio-code/favicon.ico">
+    <link rel="stylesheet" href="/visual-studio-code/css/style.css">
+    <link media="print" rel="stylesheet" href="/visual-studio-code/css/print.css">
+    <script src="/visual-studio-code/js/fuse.min.js"></script>
+    <script src="/visual-studio-code/js/script.js"></script>
+    <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/4.1.3/tex-chtml.min.js" defer></script>
+    <script src="/monetize/monetize.js"></script>
+    <script src="/social/social.js"></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How to Fix VS Code High CPU Usage - visual-studio-code" />
+    <meta property="og:url" content="https://salivity.github.io/visual-studio-code/article/how-to-fix-vs-code-high-cpu-usage" />
+    <meta property="og:image" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:secure_url" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="Visual Studio Code is a highly popular and lightweight text editor, but users occasionally encounter performance issues where the application consumes an unusually high percentage of CPU resources. This guide provides a direct, step-by-step troubleshootin" />
+    <link rel="manifest" href="/visual-studio-code/pwa/manifest.json" />
+</head>
+<body>
+    <header>
+        <a href="/visual-studio-code/" aria-label="Go To Home Page" title="Go To Home Page" id="logo">
+            <span>salivity.github.io/</span><span>visual-studio-code</span>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a href="/visual-studio-code/search" title="Search" aria-label="Go To Search Page"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg></a></li>
+                <li><a id="theme-toggle" title="Theme" href="javascript:void(0);" aria-label="Toggle Website Theme"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    <div class="article-layout">
+        <aside id="profile-sidebar" class="profile-column" aria-label="Author Profile"></aside>
+        <div class="article-main-column">
+            <article><h1 id="how-to-fix-vs-code-high-cpu-usage">How to Fix VS Code High CPU
+Usage</h1>
+<p>Visual Studio Code is a highly popular and lightweight text editor,
+but users occasionally encounter performance issues where the
+application consumes an unusually high percentage of CPU resources. This
+guide provides a direct, step-by-step troubleshooting workflow to help
+you identify the root cause of the slowdown and implement effective
+solutions. You will learn how to use built-in diagnostics, isolate
+problematic extensions, and adjust specific settings to restore VS Code
+to its optimal, lightweight state.</p>
+<h2 id="step-1-identify-the-culprit-with-process-explorer">Step 1:
+Identify the Culprit with Process Explorer</h2>
+<p>VS Code has a built-in task manager called the Process Explorer. This
+tool shows exactly which process (such as a utility process, the main
+window, or a specific extension) is consuming your CPU.</p>
+<ol type="1">
+<li>Open VS Code.</li>
+<li>Click on <strong>Help</strong> in the top menu bar, then select
+<strong>Open Process Explorer</strong> (or press <code>Ctrl+Alt+P</code>
+/ <code>Cmd+Option+P</code> on some systems).</li>
+<li>Look at the <strong>CPU %</strong> column to find the process with
+the high percentage.</li>
+<li>If the high CPU usage is tied to an extension host or a specific
+extension process, you have found the source. If it is tied to a
+file-watching or search process, your project configuration may need
+adjustment.</li>
+</ol>
+<h2 id="step-2-test-without-extensions">Step 2: Test Without
+Extensions</h2>
+<p>Extensions are the most common cause of high CPU usage in VS Code. To
+verify if an extension is causing the issue, you should run VS Code with
+all extensions temporarily disabled.</p>
+<ol type="1">
+<li><p>Close all running instances of VS Code.</p></li>
+<li><p>Open your terminal or command prompt.</p></li>
+<li><p>Launch VS Code from the command line using the following
+command:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> <span class="at">--disable-extensions</span></span></code></pre></div></li>
+<li><p>Work in this clean environment for a few minutes. If the CPU
+usage returns to normal, an extension is definitely causing the
+issue.</p></li>
+</ol>
+<p>To find the specific problematic extension, re-enable your extensions
+one by one (or in halves) until the high CPU usage returns, then
+uninstall or replace that extension.</p>
+<h2 id="step-3-optimize-file-watcher-and-search-settings">Step 3:
+Optimize File Watcher and Search Settings</h2>
+<p>VS Code constantly monitors files in your workspace for changes. If
+you are working on a large project with thousands of files (like a
+massive <code>node_modules</code> folder or build directories), the file
+watcher can overload your CPU.</p>
+<p>You can exclude heavy folders from being indexed by updating your
+settings:</p>
+<ol type="1">
+<li>Open Settings (<code>Ctrl+,</code> or <code>Cmd+,</code>).</li>
+<li>Search for <code>watcher exclude</code>.</li>
+<li>Under <strong>Files: Watcher Exclude</strong>, add patterns for
+directories you do not need to track. For example:
+<ul>
+<li><code>**/node_modules/*</code></li>
+<li><code>**/dist/*</code></li>
+<li><code>**/.git/*</code></li>
+</ul></li>
+<li>Search for <code>search exclude</code> and ensure similar heavy
+folders are added to <strong>Search: Exclude</strong> to prevent the
+search indexer from constantly scanning them.</li>
+</ol>
+<h2 id="step-4-disable-gpu-acceleration">Step 4: Disable GPU
+Acceleration</h2>
+<p>In some systems, hardware compatibility issues with the Chromium
+engine underneath VS Code can cause severe CPU spikes. Disabling GPU
+acceleration can resolve this.</p>
+<ol type="1">
+<li><p>Open the Command Palette (<code>Ctrl+Shift+P</code> or
+<code>Cmd+Shift+P</code>).</p></li>
+<li><p>Type and select <strong>Preferences: Configure Runtime
+Arguments</strong>. This opens the <code>argv.json</code> file.</p></li>
+<li><p>Add the following line to the JSON configuration:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;disable-hardware-acceleration&quot;</span><span class="er">:</span> <span class="kw">true</span></span></code></pre></div></li>
+<li><p>Save the file, close VS Code, and restart your computer.</p></li>
+</ol>
+<h2 id="step-5-clear-vs-code-cache">Step 5: Clear VS Code Cache</h2>
+<p>Corrupted cache files can cause the editor to get stuck in infinite
+loops, leading to high CPU usage.</p>
+<ol type="1">
+<li>Close VS Code.</li>
+<li>Navigate to the cache directory on your operating system:
+<ul>
+<li><strong>Windows:</strong> <code>%APPDATA%\Code\Cache</code> and
+<code>%APPDATA%\Code\CachedData</code></li>
+<li><strong>macOS:</strong>
+<code>~/Library/Application Support/Code/Cache</code> and
+<code>~/Library/Application Support/Code/CachedData</code></li>
+<li><strong>Linux:</strong> <code>~/.config/Code/Cache</code> and
+<code>~/.config/Code/CachedData</code></li>
+</ul></li>
+<li>Delete the contents of these folders and restart VS Code.</li>
+</ol></article>
+        <div id='disqus_thread'></div>
+        <script>
+
+            var disqus_config = function () {
+                this.page.url =         'https://salivity.github.io/visual-studio-code/article/how-to-fix-vs-code-high-cpu-usage';  
+                //this.page.identifier =  PAGE_IDENTIFIER; 
+            };
+            
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://salivity-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+        </div>
+    </div>
+    
+    </main>
+    <footer>
+        <nav>
+            <ul class="social-links">
+            </ul>
+        </nav>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="https://smvc.dev/contact">Contact</a></li>
+                <li><a href="/visual-studio-code/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/visual-studio-code/terms-and-conditions">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright &copy; <span id="current-year"></span>
+        </div>
+    </footer>
+</body>
+</html>
