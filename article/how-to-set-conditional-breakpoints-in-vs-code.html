@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Set Conditional Breakpoints in VS Code - visual-studio-code</title>
+    <meta name="description" content="Conditional breakpoints in Visual Studio Code (VS Code) allow you to pause code execution only when specific conditions are met, saving you from manually stepping through loops or repetitive function calls. This guide provides a straightforward, step-by-s">
+    <link rel="canonical" href="https://salivity.github.io/visual-studio-code/article/how-to-set-conditional-breakpoints-in-vs-code">
+    <link rel="search" type="application/opensearchdescription+xml" title="visual-studio-code" href="/visual-studio-code/opensearch.xml">
+    <link rel="icon" href="/visual-studio-code/favicon.ico">
+    <link rel="stylesheet" href="/visual-studio-code/css/style.css">
+    <link media="print" rel="stylesheet" href="/visual-studio-code/css/print.css">
+    <script src="/visual-studio-code/js/fuse.min.js"></script>
+    <script src="/visual-studio-code/js/script.js"></script>
+    <script id="MathJax-script" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/4.1.3/tex-chtml.min.js" defer></script>
+    <script src="/monetize/monetize.js"></script>
+    <script src="/social/social.js"></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="How to Set Conditional Breakpoints in VS Code - visual-studio-code" />
+    <meta property="og:url" content="https://salivity.github.io/visual-studio-code/article/how-to-set-conditional-breakpoints-in-vs-code" />
+    <meta property="og:image" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:secure_url" content="https://salivity.github.io/visual-studio-code/images/open-graph/default.webp" />
+    <meta property="og:image:width" content="1120" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="Conditional breakpoints in Visual Studio Code (VS Code) allow you to pause code execution only when specific conditions are met, saving you from manually stepping through loops or repetitive function calls. This guide provides a straightforward, step-by-s" />
+    <link rel="manifest" href="/visual-studio-code/pwa/manifest.json" />
+</head>
+<body>
+    <header>
+        <a href="/visual-studio-code/" aria-label="Go To Home Page" title="Go To Home Page" id="logo">
+            <span>salivity.github.io/</span><span>visual-studio-code</span>
+        </a>
+        <nav>
+            <ul class="header-links">
+                <li><a href="/visual-studio-code/search" title="Search" aria-label="Go To Search Page"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path></svg></a></li>
+                <li><a id="theme-toggle" title="Theme" href="javascript:void(0);" aria-label="Toggle Website Theme"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    <div class="article-layout">
+        <aside id="profile-sidebar" class="profile-column" aria-label="Author Profile"></aside>
+        <div class="article-main-column">
+            <article><h1 id="how-to-set-conditional-breakpoints-in-vs-code">How to Set
+Conditional Breakpoints in VS Code</h1>
+<p>Conditional breakpoints in Visual Studio Code (VS Code) allow you to
+pause code execution only when specific conditions are met, saving you
+from manually stepping through loops or repetitive function calls. This
+guide provides a straightforward, step-by-step walkthrough on how to
+set, configure, and manage conditional breakpoints in VS Code using
+expressions, hit counts, or log messages.</p>
+<h3 id="step-1-locate-the-target-line-of-code">Step 1: Locate the Target
+Line of Code</h3>
+<p>Open your project in VS Code and navigate to the source file you want
+to debug. Locate the specific line of code where you want to pause
+execution.</p>
+<h3 id="step-2-access-the-breakpoint-menu">Step 2: Access the Breakpoint
+Menu</h3>
+<p>Instead of left-clicking to set a standard breakpoint, access the
+conditional options:</p>
+<ol type="1">
+<li>Hover your mouse cursor over the gutter (the blank space to the left
+of the line numbers).</li>
+<li>Right-click on the gutter next to your target line.</li>
+<li>Select <strong>Add Conditional Breakpoint...</strong> from the
+context menu.</li>
+</ol>
+<p><em>(Alternatively, if you already have a standard red breakpoint
+set, you can right-click it and select <strong>Edit
+Breakpoint...</strong>).</em></p>
+<h3 id="step-3-choose-your-condition-type">Step 3: Choose Your Condition
+Type</h3>
+<p>A small dropdown menu will appear over your code. Click the dropdown
+to choose one of three condition types:</p>
+<ul>
+<li><strong>Expression:</strong> The debugger will pause execution only
+when the expression you enter evaluates to <code>true</code>.
+<ul>
+<li><em>Example:</em> <code>user.id === 42</code> or
+<code>count &gt; 10</code></li>
+</ul></li>
+<li><strong>Hit Count:</strong> The debugger will pause execution only
+after the line has been executed a specified number of times. You can
+use operators like <code>=</code>, <code>&gt;</code>,
+<code>&gt;=</code>, or <code>%</code> (for multiples).
+<ul>
+<li><em>Example:</em> <code>5</code> (pauses on the 5th hit), or
+<code>&gt;10</code> (pauses every time after the 10th hit).</li>
+</ul></li>
+<li><strong>Log Message:</strong> Rather than pausing execution, this
+creates a "Logpoint" that prints a message to the Debug Console when
+hit. You can interpolate variables using curly braces.
+<ul>
+<li><em>Example:</em> <code>Current index is {i}</code></li>
+</ul></li>
+</ul>
+<h3 id="step-4-save-the-breakpoint">Step 4: Save the Breakpoint</h3>
+<p>After selecting the type and typing your condition in the text box,
+press <strong>Enter</strong> to apply it.</p>
+<p>You will notice the standard red breakpoint circle is replaced by an
+orange circle with an equal sign (<code>=</code>) or a white play icon
+inside, indicating that a conditional breakpoint or logpoint is
+active.</p>
+<h3 id="how-to-edit-or-remove-a-conditional-breakpoint">How to Edit or
+Remove a Conditional Breakpoint</h3>
+<p>To modify or remove your condition:</p>
+<ul>
+<li><strong>To edit:</strong> Right-click the conditional breakpoint
+icon and select <strong>Edit Breakpoint...</strong> to change the
+expression.</li>
+<li><strong>To disable:</strong> Right-click the icon and select
+<strong>Disable Breakpoint</strong> to temporarily ignore it without
+deleting your condition.</li>
+<li><strong>To remove:</strong> Click directly on the breakpoint icon,
+or right-click and select <strong>Remove Breakpoint</strong>.</li>
+</ul></article>
+        <div id='disqus_thread'></div>
+        <script>
+
+            var disqus_config = function () {
+                this.page.url =         'https://salivity.github.io/visual-studio-code/article/how-to-set-conditional-breakpoints-in-vs-code';  
+                //this.page.identifier =  PAGE_IDENTIFIER; 
+            };
+            
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://salivity-github-io.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+        </div>
+    </div>
+    
+    </main>
+    <footer>
+        <nav>
+            <ul class="social-links">
+            </ul>
+        </nav>
+        <nav>
+            <ul class="footer-links">
+                <li><a href="https://smvc.dev/contact">Contact</a></li>
+                <li><a href="/visual-studio-code/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/visual-studio-code/terms-and-conditions">Terms and Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            Copyright &copy; <span id="current-year"></span>
+        </div>
+    </footer>
+</body>
+</html>
